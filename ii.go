@@ -4,11 +4,12 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"mapreduce"
 	"os"
 	"strconv"
 	"strings"
 	"unicode"
+
+	"github.com/xlk3099/gomapreduce/mapreduce"
 )
 
 // The mapping function is called once for each piece of the input.
