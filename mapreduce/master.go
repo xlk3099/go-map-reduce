@@ -169,6 +169,7 @@ func (mr *Master) killWorkers() []int {
 		if ok == false {
 			fmt.Printf("Master: RPC %s shutdown error\n", w)
 		} else {
+			fmt.Printf("worker %s, completed: %d tasks.\n", w, reply.Ntasks)
 			ntasks = append(ntasks, reply.Ntasks)
 		}
 	}
